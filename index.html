@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #viewport {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+    <script>
+      window.onerror = function (event, source, lineno, colno, error) {
+        parent['captureError'] && parent['captureError'](event, source, lineno, colno, error);
+        return false;
+      }
+    </script>
+    <script>
+      window.cdnHost = "cdn-zip-us-aws-e.dora.run";
+    </script>
+    <base href="https://cdn-static-e.dora.run/dora_runner/assets/packages/renderer_flutter/threed_renderer.3dd6579ce4ed6c32/" />
+  </head>
+
+  <body id="body">
+    <script src="https://cdn-zip-us-aws-e.dora.run/signals@1.0.0/dist/signals.min.js"></script>
+
+    <script src="./build/glbCompress.js"></script>
+    <script src="./build/index.js"></script>
+  </body>
+</html>
